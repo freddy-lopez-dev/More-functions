@@ -20,6 +20,12 @@ int[] GetIntegersFromUser()
     return numbers;
 }
 
+
+/* Important to define the method
+ * This method uses a nested loop to iteratively compare all of the values in an array to each other.
+ * If a match is found, that value is added to the duplicate numbers.
+ * 
+ */
 int[] FindDuplicateNumbers(int[] numbers)
 {
     int[] duplicateNumbers = new int[0]; //Empty array assign
