@@ -28,3 +28,25 @@ if (SumOfALlNum == input)
 {
     Console.WriteLine("Your number is not perfect", input);
 }
+
+// In class solution
+Console.WriteLine(isPerfectNumber(12)); // running the function independently
+
+bool isPerfectNumber(int testVal)
+{
+    int runningTotal = 0;
+
+    for (int i = testVal / 2; i > 0; i--)
+    {
+        if (testVal % i == 0)
+        {
+            runningTotal += i; // add and assign
+        }
+        if (testVal < runningTotal)
+        {
+            return false;
+        }
+    }
+
+    return testVal == runningTotal;
+}
